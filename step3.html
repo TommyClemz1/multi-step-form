@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="step3-style.css">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+
+    <!-- Sidebar start -->
+    <div class="container">
+
+        <div class="left">
+
+            <div class="left-1">
+                <div class="circle"><span>1</span></div>
+                <div class="step-text">Step 1 <br>
+                    <span class="up-Case">Your info</span></div>
+            </div>
+
+            <div class="left-2">
+                <div class="circle"><span>2</span></div>
+                <div class="step-text">Step 2 <br>
+                    <span class="up-Case"> Select plan</span></div>
+            </div>
+
+            <div class="left-3">
+                <div class="circle"><span>3</span></div>
+                <div class="step-text">Step 3 <br>
+                    <span class="up-Case"> Add-ons</span></div>
+            </div>
+
+            <div class="left-4">
+                <div class="circle"><span>4</span></div>
+                <div class="step-text">Step 4 <br>
+                    <span class="up-Case"> Summary</span>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar end -->
+
+        <!-- Step 1 start -->
+        <div class="right">
+
+            <div class="right-1">
+                <h1>Pick add-ons</h1>
+                Add ons help enhance your gaming experience.
+            </div>
+
+
+            <div class="container-options">
+                <div class="online-sev"><h3>Online service</h3>
+                   <div> <p class="flx"> Access to multiplayer games
+                        <span class="new"> +$1/mo</span>
+                    </p></div>
+                </div>
+                <div class="larger-sto">
+                     <h3> Larger Storage</h3>
+                   <div> <p class="flx">Extra 1TB of cloud save 
+                        <span class="new">+$2/mo</span> </p></div>
+                </div>
+                <div class="customizable-prof">
+                   <h3>Customizable profile</h3>
+                    <div>
+                    <p class="flx"> Custom theme on your profile
+                        <span class="new">+$2/mo</span></div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="gb" id="backButton">Go Back</div>
+            <button id="nextButton">Next Step</button>
+
+            <script>
+              document.getElementById("nextButton").addEventListener("click", function() {
+                window.location.href = "step4monthly.html";
+              });
+              document.getElementById("backButton").addEventListener("click", function() {
+                window.location.href = "step2.html";
+              });
+            </script>
+
+    <!-- Step 5 end -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>. -->
+    </div>
+</body>
+
+</html>

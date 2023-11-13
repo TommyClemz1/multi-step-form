@@ -1,0 +1,327 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+body{
+    background-color:white;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+}
+
+
+.container{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 500px;
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    gap: 10px;
+
+}
+
+.left{
+    color:white;
+width: 30%;
+padding: 10px;
+background: url(./assets/images/bg-sidebar-desktop.svg);
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+border-radius: 10px;
+}
+
+.right{
+    /* background-color: purple; */
+    width: 70%;
+    padding: 10px;
+    padding-left:70px ;
+    position: relative;
+}
+
+
+.up-Case{
+    text-transform:uppercase;
+    font-weight: 800;
+   
+    display: block;
+    width: 100%;
+    
+}
+
+.circle{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+   border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-1, .left-2,.left-3,.left-4{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.step-text{
+    text-align: start;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+    margin-top: 5px;
+}
+
+div.container > div.left > div.left-1 > div.circle
+{
+    background-color:  hsl(231, 100%, 99%);
+}
+div.container > div.left > div.left-1 > div.circle > span{
+    color: rgb(32, 32, 181);
+    font-weight: 800;
+}
+
+.right-1{
+    margin-bottom: 50px;
+}
+
+.label{
+    margin-bottom: 5px;
+    margin-top: 6px;
+    color: rgb(20, 20, 92);
+    font-weight: 700;
+}
+input[type="text"]{
+padding: 10px;
+width: 90%;
+border-radius: 5px;
+outline: none;
+border: 1px solid hsl(231, 11%, 63%);
+margin-bottom: 25px ;
+}
+
+
+button {
+    padding: 10px;
+    color: white;
+    background-color: rgb(20, 20, 92);
+    border: none;
+    border-radius: 5px;
+position: absolute;
+right: 75px;
+top: 400px;
+width: 20%;
+
+}
+
+
+.right-1>h1{
+    color: rgb(20, 20, 92);
+}
+
+@media (max-width:500px) {
+
+        body{
+            background-color: white;
+        }
+    .container{
+        margin: 0;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    padding: 0;
+    border-radius:0;
+flex-direction: column;
+height:560px;
+background-color: aliceblue;
+}
+
+.left{
+
+display: flex;
+background: url(./assets/images/bg-sidebar-mobile.svg);
+gap: 10px;
+justify-content: center;
+width: 100%;
+background-repeat: no-repeat;
+background-size:cover;
+border-radius: 0;
+height: 400px;
+padding-top: 3rem;
+}
+
+.step-text,.up-Case{
+    display: none;
+}
+
+
+.right{
+    width: 90%;
+    position: relative;
+    top: -1.99rem;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-left: 25px;
+    
+
+}
+
+.circle{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+   border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-1{
+    margin-bottom: 30px;
+    width: 70%;
+
+color: hsl(231, 11%, 63%);
+}
+.right-1>h1{
+font-size: x-large;
+font-weight: 700;
+color:rgb(20, 20, 92) ;
+margin-bottom: 15px;
+
+}
+
+
+html{
+    background-color: white;
+}
+
+
+button {
+  
+position: absolute;
+right: 2.5rem;
+top: 28.8rem;
+width: 42%;
+
+}
+
+.label{
+   
+    margin-top: 8px;
+    color: rgb(98, 98, 157);
+    
+}
+
+
+
+}
+
+@media (max-width:282px) {
+    
+
+    button {
+     
+  
+            top: 27.8rem;
+            
+            
+       
+        width: 40%;
+        
+        }
+
+        .left{
+            padding-top: 2rem;
+            }
+
+
+        .right{
+            top: -1.25rem;
+        }
+
+}
+
+
+@media (max-width:218px) {
+    
+
+    button {
+     
+  
+            top: 28.1rem;
+            
+            right: 1rem;
+       
+        width: 47%;
+        
+        }
+}
+
+
+@media (max-width:206px) {
+    
+
+    button {
+     
+  
+            top: 32.4rem;
+            
+            right: 1rem;
+       
+        width: 47%;
+        
+        margin-bottom: 10px;
+        }
+
+        .container{
+            height: 650px;
+        }
+
+        .right{
+            top: -4.25rem;
+           
+        } 
+/* 
+        .left{
+            padding-top: 2rem;
+            }*/
+
+
+
+}
+
+
+
+
+@media (min-width:501px) and (max-width:1000px) {
+    .left{
+        width: 40%;
+    }
+    .container{
+        width: 90%;
+    }
+    .right{
+        
+        padding-left:20px ;
+        
+    }
+    button{
+        width: 30%;
+        right: 2rem;
+    }
+
+    body > div.container > div.left > div.left-2 > div.step-text > span{
+        font-size: small;
+    }
+
+    /* body > div.container > div.left > div.left-2 > div.step-text{
+        /* background-color:black ; */
+     
+
+}

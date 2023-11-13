@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="stylesheet" href="step2-style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+
+  <!-- Sidebar start -->
+  <div class="container">
+
+    <div class="left">
+
+      <div class="left-1">
+        <div class="circle"><span>1</span></div>
+        <div class="step-text">Step 1 <br>
+          <span class="up-Case">Your info</span></div>
+      </div>
+
+      <div class="left-2">
+        <div class="circle"><span>2</span></div>
+        <div class="step-text">Step 2 <br>
+          <span class="up-Case"> Select plan</span></div>
+      </div>
+
+      <div class="left-3">
+        <div class="circle"><span>3</span></div>
+        <div class="step-text">Step 3 <br>
+          <span class="up-Case"> Add-ons</span></div>
+      </div>
+
+      <div class="left-4">
+        <div class="circle"><span>4</span></div>
+        <div class="step-text">Step 4 <br>
+          <span class="up-Case"> Summary</span>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar end -->
+
+    <!-- Step 1 start -->
+    <div class="right">
+
+      <div class="right-1">
+        <h1>Select your plan</h1>
+       You have the option of monthly or yearly billing
+      </div>
+      <div class="container-options">
+     <div class="arcade">
+        <img src="./assets/images/icon-arcade.svg" alt="">
+        <div class="arc">
+        Arcade <br>
+        <span class="cash">$9/mo</span></div>
+     </div>
+     <div class="advanced">
+        <img src="./assets/images/icon-advanced.svg" alt="">
+        <div class="ad">
+        Advanced <br>
+        <span class="cash">$12/mo</span></div>
+     </div>
+     <div class="pro"><img src="./assets/images/icon-pro.svg" alt="">
+        <div class="pr">
+        Pro <br>
+        <span class="cash">$15/mo</span></div>
+     </div>
+</div>
+
+<div class="mo-yr">
+<span class="blue">Monthly</span> <div class="checkmark" id="select"><div class="mark"></div></div>
+Yearly
+</div>
+
+      <div class="gb" id="backButton">Go Back</div>
+      <button id="nextButton">Next Step</button>
+
+      <script>
+      
+
+
+        document.getElementById("select").addEventListener("click", function() {
+          window.location.href = "step2yearly.html";
+        });
+        document.getElementById("nextButton").addEventListener("click", function() {
+          window.location.href = "step3.html";
+        });
+        document.getElementById("backButton").addEventListener("click", function() {
+          window.location.href = "index.html";
+        });
+      </script>
+
+    </div>
+  </div>
+
+  <!-- Step 5 end -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+</body>
+
+</html>
