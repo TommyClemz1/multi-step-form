@@ -283,7 +283,7 @@ button:hover {
     .ad,
     .pr {
         padding-top: 10px;
-        padding-left: 30px
+        padding-left: 30px;
     }
 
     img {
@@ -297,12 +297,12 @@ button:hover {
     .pro {
         width: 90%;
         height: 4rem;
-        display: flex
+        display: flex;
     }
 
     .container-options {
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
 
     button {
@@ -321,34 +321,34 @@ button:hover {
 
 @media (max-width:275px) {
     #select {
-        width: 40px
+        width: 40px;
     }
 
     .mo-yr {
-        gap: 10px
+        gap: 10px;
     }
 }
 
 @media (max-width:290px) and (min-width:200px) {
     hr {
-        margin-left: 10px
+        margin-left: 10px;
     }
 
     .right {
         top: -1.5rem;
-        padding-left: 10px
+        padding-left: 10px;
     }
 
     .mo-yr {
-        gap: 5px
+        gap: 5px;
     }
 
     .left {
-        padding-top: .8rem
+        padding-top: .8rem;
     }
 
     .mo-yr {
-        width: 100%
+        width: 100%;
     }
 
     .gb {
@@ -359,56 +359,56 @@ button:hover {
     button {
         top: 40rem;
         right: .1rem;
-        width: 40%
+        width: 40%;
     }
 }
 
 @media (max-width:332px) and (min-width:292px) {
     .right {
-        top: -3.6rem
+        top: -3.6rem;
     }
 
     hr {
-        margin-left: 10px
+        margin-left: 10px;
     }
 
     .gb {
-        left: 1rem
+        left: 1rem;
     }
 
     button {
-        right: 1rem
+        right: 1rem;
     }
 
     .gb,
     button {
-        top: 35rem
+        top: 35rem;
     }
 }
 
 @media (min-width:501px) and (max-width:1000px) {
     .left {
-        width: 40%
+        width: 40%;
     }
 
     .container {
-        width: 90%
+        width: 90%;
     }
 
     .right {
-        padding-left: 20px
+        padding-left: 20px;
     }
 
     button {
         width: 30%;
-        right: 2rem
+        right: .5rem;
     }
 
     body>div.container>div.left>div.left-2>div.step-text>span {
-        font-size: small
+        font-size: small;
     }
 
     .gb {
-        left: 1rem
+        left: 1rem;
     }
 }
